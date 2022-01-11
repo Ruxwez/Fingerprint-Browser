@@ -1,6 +1,6 @@
 {
     "name": "fingerprint-browser",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "author": "Ruxwez",
     "repository": "https://github.com/Ruxwez/Fingerprint-Browser.git",
     "main": "index.js",

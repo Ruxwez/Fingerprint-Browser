@@ -1,4 +1,4 @@
-export default ({ enableWebgl = false, debug = false } = {}) => {
+export default ({ WebGL = false, debug = false } = {}) => {
     let { devicePixelRatio } = window;
     // weird behaviour when getting value from localhost vs ip!!!
     devicePixelRatio = +parseInt(devicePixelRatio);
@@ -32,7 +32,7 @@ export default ({ enableWebgl = false, debug = false } = {}) => {
     const touchSupport = 'ontouchstart' in window;
 
     const canvas = getCanvasID(debug);
-    const webgl = enableWebgl ? getWebglID(debug) : null;
+    const webgl = WebGL ? getWebglID(debug) : null;
     const webglInfo = getWebglInfo(debug);
 
     const data = {
